@@ -11,18 +11,19 @@ header{
         border: black;
         color: white;
     background-color: rgb(15, 2, 133);
-    padding: 100px;
+    padding: 5%;
     text-align:center;
     font-size: 40px;
+    
     }
 
 
 nav{
     background-color:black;
     padding: 10px;
-    word-spacing: 250px;
     color: white;
-    
+    display: flex;
+    justify-content: space-around;
 }
 
 nav a{
@@ -55,15 +56,13 @@ nav a{
 
     div img{
         position: absolute;
-        top: 340px;
-        left: 840px;
         background-color:rgb(213, 207, 207);
         border-radius:50%;
-        border-color: black;
-        border: 5px solid;
+        border: 5px solid black;
         height: 200px;
         width: 200px;
-        
+        display: flex;
+        justify-content: center;
     }
 
 
