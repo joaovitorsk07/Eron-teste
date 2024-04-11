@@ -1,28 +1,36 @@
-body{
-background-color: white;
-color: black;
+nav {
+ border-style: none;
+ 
 }
+
 form{
-    font-size: 30px;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: italic;
-    
+    font-family: Arial, sans-serif;
+}
+
+label{
+    margin: 10px 0;
+}
+
+input, textarea{
+    margin: 5px 0;
+    padding: 5px;
+    width: 300px;
 }
 
 button{
-    padding: 10px;
-    background-color: blue;
-    color: white;
-    border-radius: 10px;
+padding: 8px;
+background-color: rgb(35, 0, 233);
+border: 2px solid black;
+color: white;
+font-family: Arial, sans-serif;
+cursor: grabbing;
+border-radius: 5px;
+box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
 }
-header{
-    border: black;
-    color: white;
-background-color: rgb(15, 2, 133);
-padding: 100px;
-text-align:center;
-font-size: 40px;
+
+button:hover{
+    background-color: transparent;
 }

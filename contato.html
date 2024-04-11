@@ -1,27 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatos</title>
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contato.css">
 </head>
+
 <body>
- <link rel="stylesheet" href="contato.css">
- <header>
-    <h1>Contatos</h1>
- </header>
+    <header>
+        <h1>
+            Contato
+        </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="index.html">Início</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="galeria.html">Galeria</a>
+        </ul>
+    </nav>
+
     <form>
-        <label for="name">Nome</label>
+        <label for="name">Nome: </label>
         <input type="text" id="name" name="name" required>
 
-        <label for="email">email</label>
+        <label for="email">Email: </label>
         <input type="email" name="email" id="email" required>
 
-      <label for="message">Mensagem</label>
-      <textarea name="message" id="message" rows="5"></textarea>
+        <label for="message">Mensagem: </label>
+        <textarea name="message" id="message" rows="5"></textarea>
 
-      <button type="submit">Enviar</button>
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" id="senha">
+
+        <label for="numero">Número: </label>
+        <input type="number" name="numero" id="numero" pattern="[0 9]*">
+
+        <label for="faixa_valor">Faixa de Valor </label>
+        <input type="range" name="faixa_valor" id="faixa_valor">
+
+        <label for="data">Escolha uma Data</label>
+        <input type="date" name="data" id="data">
+
+        <label for="caixa_selecao">Caixa de Seleção </label>
+        <input type="checkbox" name="caixa_selecao" id="caixa_selecao">
+
+        <label for="selecao">Rádio </label>
+        <input type="radio" name="selecao" id="selecao">
+
+        <label for="arquivo">Selecione um arquivo </label>
+        <input type="file" name="arquivo" id="arquivo">
+
+        <label for="cor">Selecione uma Cor</label>
+        <input type="color" name="cor" id="cor">
+
+        <button type="submit" onclick="mostraMensagem()">Enviar</button>
     </form>
+
+    <script>
+        function mostraMensagem(){
+        alert("Formulário enviado");
+        }
+    </script>
 </body>
+
 </html>
